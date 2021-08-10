@@ -3,6 +3,15 @@ nav li {
 }
 
 
+body{
+    background-color: black;
+}
+
+
+.ace {
+    background-image: url(file:///C:/Users/OWNER/Documents/GitHub/website/images/bg1.png);
+}
+
 section {
     padding: 100px;
 }
@@ -11,6 +20,14 @@ section {
 .hd {
     image-rendering: pixelated;
 }
+
+.hd:hover {
+    image-rendering: pixelated;
+    cursor: pointer;
+    animation: slightrotate 15000ms ease-in-out forwards;
+    animation-iteration-count: infinite
+}
+
 
 
 img {
@@ -28,14 +45,14 @@ img {
 
 nav {
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: black;
     border-radius: 25px;
     animation: nav-load 300ms ease-in-out;
 }
 
 
 @font-face { 
-    font-family: Minecraft; src: url('Minecraft.otf');
+    font-family: Minecraft; src: url('antipasto.ttf');
     color: white
 }
 
@@ -59,8 +76,26 @@ nav li:hover{
     }
 }
 
+
+@keyframes slightrotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    45% {
+        transform: rotate(5deg)
+    }
+    75% {
+        transform: rotate(-5deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+
+
+}
+
 .navbutton {
-    background-color: #4CAF50;
+    background-color: rgba(255, 255, 255, 0);
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -70,11 +105,12 @@ nav li:hover{
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
-    border-radius: 25px;
+    border-radius: 15px;
+    border: 3px solid white;
 }
 
 .applicationbutton {
-    background-color:#4CAF50;
+    background-color:#0b60ff;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -84,7 +120,11 @@ nav li:hover{
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
-    border-radius: 25px;
+    border-radius: 15px;
+}
+
+.applicationbutton:hover {
+    cursor:pointer;
 }
 
 
@@ -99,8 +139,8 @@ nav li:hover{
 
 }
 .navbuttonselected {
-    background-color: rgb(153, 255, 102);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
@@ -109,7 +149,7 @@ nav li:hover{
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 
@@ -125,10 +165,12 @@ nav li:hover{
     0% {
         scale: 0;
         opacity: 100;
+        border-radius: 15px;
     }
     100% {
         scale: 100;
-        opacity: 90;
+        opacity: 50;
+        border-radius: 100px;
     }
 }
 
@@ -161,3 +203,35 @@ nav li:hover{
 #my{
     zoom: 75%;
     }
+
+html {
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+    }
+
+footer {
+    background-color: black;
+    margin-top: 500px;
+}
+
+.social {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p1 {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.bog {
+    display:contents;
+  }
+
+.spot {
+    align-items: center;
+}
